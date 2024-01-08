@@ -25,16 +25,20 @@ class JournalEntryTile extends StatelessWidget {
               onPressed: deleteFunction,
               icon: Icons.check_box,
               backgroundColor: Colors.pinkAccent,
-              borderRadius: BorderRadius.circular(25),
+
             )
           ],
         ),
         child: Container(
           padding: const EdgeInsets.all(30),
-          decoration: BoxDecoration(
-              color: Colors.teal[100],
-              borderRadius: BorderRadius.circular(25)
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/pic.png'),
+              fit: BoxFit.cover,
+
+            ),
           ),
+
           child: Row(
             children: [
               Expanded(
@@ -42,8 +46,12 @@ class JournalEntryTile extends StatelessWidget {
                   taskName,
                   maxLines: 5,
                   overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.dmSans(
-                    fontSize: 20
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontFamily: 'Cutive',
+                    fontSize: 30,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w900,
                   ),
                 ),
               ),

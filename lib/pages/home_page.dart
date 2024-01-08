@@ -20,7 +20,12 @@ class HomePage extends StatelessWidget {
             Flexible(
                 flex: 8,
                 child: Container(
-                  color: Colors.teal[200],
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('images/340434.png'),
+                    fit: BoxFit.fill,
+                    ),
+                  ),
                   child: Center(
                   child: FutureBuilder(
                       future: getAffirmationQuote(),
@@ -31,22 +36,24 @@ class HomePage extends StatelessWidget {
                             child: Text(
                               myQuote,
                               textAlign: TextAlign.center,
-                              style: GoogleFonts.dmSans(
+                              style: const TextStyle(
+                                fontFamily: 'Nanum',
                                 fontSize: 36,
                                 color: Colors.white,
-                                fontWeight: FontWeight.w500
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           );
                         } else {
-                          return SpinKitPumpingHeart(
-                            color: Colors.pink[300],
+                          return const SpinKitPumpingHeart(
+                            color: Colors.white,
                             size: 100.0,
                           );
                         }
                       }
                   ),
                   ),
+
                 )
             ),
 
@@ -97,7 +104,7 @@ class _DatePickerTxtState extends State<DatePickerTxt> {
       child: const Text(
         "Select Date Time",
         style: TextStyle(
-          fontSize: 18,
+          fontSize: 20,
         ),
 
       ),

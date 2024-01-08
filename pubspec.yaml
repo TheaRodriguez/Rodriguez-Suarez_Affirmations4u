@@ -70,6 +70,14 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  assets:
+    - images/blurred-turquoise-background-design_1107-187.png
+    - images/340434.png
+    - images/download.png
+    - images/images.png
+    - images/pic.png
+
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
@@ -86,6 +94,34 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+
+  fonts:
+    - family: PTSerif
+      fonts:
+        - asset: fonts/PTSerif-Regular.ttf
+
+    - family: Dancing
+      fonts:
+        - asset: fonts/DancingScript-Regular.ttf
+
+    - family: Cutive
+      fonts:
+        - asset: fonts/CutiveMono-Regular.ttf
+
+    - family: Cormorant
+      fonts:
+        - asset: fonts/CormorantGaramond-Regular.ttf
+
+    - family: Nanum
+      fonts:
+        - asset: fonts/NanumMyeongjo-Regular.ttf
+
+    - family: Amatic
+      fonts:
+        - asset: fonts/AmaticSC-Regular.ttf
+
+
+
   # fonts:
   #   - family: Schyler
   #     fonts:
